@@ -1,0 +1,6 @@
+    - name: Use more memory
+      sysctl:
+        name: vm.max_map_count
+        value: '262144'
+        state: present
+        reload: yes
